@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libraries>
+    <library>
+        <location>classes/wikipediasnippet</location>
+        <name>
+            Mukudu/php-class_wikipediasnippet Class
+        </name>
+    </library>
+</libraries>
