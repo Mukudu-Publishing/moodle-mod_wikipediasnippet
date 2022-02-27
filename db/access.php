@@ -25,7 +25,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $capabilities = array(
-
+    
     'mod/wikipediasnippet:addinstance' => array(
         'riskbitmask' => RISK_XSS,
         'captype' => 'write',
@@ -34,10 +34,9 @@ $capabilities = array(
             'editingteacher' => CAP_ALLOW,
             'manager' => CAP_ALLOW
         ),
-        'clonepermissionsfrom' =>
-        'moodle/course:manageactivities'
+        'clonepermissionsfrom' => 'moodle/course:manageactivities'
     ),
-
+    
     'mod/wikipediasnippet:view' => array(
         'captype' => 'read',
         'contextlevel' => CONTEXT_MODULE,
@@ -46,3 +45,4 @@ $capabilities = array(
         )
     )
 );
+

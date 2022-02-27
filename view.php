@@ -55,17 +55,17 @@ if ($cached = $cache->get($snippetrecord->id)) {
 if ($updaterequired) {
     // Get the content.
     if ($content = mod_wikipediasnippet\snippet::get($snippetrecord->wikiurl, $snippetrecord->nolinks, $snippetrecord->noimages,
-            $snippetrecord->includecitations)) {
-        // Cache the content.
-        $cache->set($snippetrecord->id, array(
-            'time' => time(),
-            'content' => $content
-        ));
-    } else {
-        if (!empty($cached['content'])) {
-            $content = $cached['content'];
+        $snippetrecord->includecitations)) {
+            // Cache the content.
+            $cache->set($snippetrecord->id, array(
+                'time' => time(),
+                'content' => $content
+            ));
+        } else {
+            if (!empty($cached['content'])) {
+                $content = $cached['content'];
+            }
         }
-    }
 }
 
 echo $OUTPUT->header();

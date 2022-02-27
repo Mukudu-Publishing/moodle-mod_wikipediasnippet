@@ -36,7 +36,7 @@ require_once('backup_wikipediasnippet_stepslib.php');
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class backup_wikipediasnippet_activity_task extends backup_activity_task {
-
+    
     /**
      * Define (add) settings for this activity.
      *
@@ -44,16 +44,16 @@ class backup_wikipediasnippet_activity_task extends backup_activity_task {
     protected function define_my_settings() {
         // No particular settings for this activity.
     }
-
+    
     /**
      * Define (add) steps this activity can have.
      *
      */
     protected function define_my_steps() {
-        $step = new backup_wikipediasnippet_activity_structure_step ( 'wikipediasnippet_structure', 'wikipediasnippet.xml');
+        $step = new backup_wikipediasnippet_activity_structure_step('wikipediasnippet_structure', 'wikipediasnippet.xml');
         $this->add_step($step);
     }
-
+    
     /**
      * Code transformations to perform in the activity
      *

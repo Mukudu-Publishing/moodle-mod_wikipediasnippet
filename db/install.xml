@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<XMLDB PATH="mod/wikipediasnippet/db" VERSION="20210323" COMMENT="XMLDB file for Moodle mod/wikipediasnippet"
+<XMLDB PATH="mod/wikipediasnippet/db" VERSION="2021051700" COMMENT="XMLDB file for Moodle mod/wikipediasnippet"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
->
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd">
   <TABLES>
     <TABLE NAME="wikipediasnippet" COMMENT="wikipediasnippet main table">
       <FIELDS>

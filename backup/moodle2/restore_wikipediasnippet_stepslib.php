@@ -31,21 +31,21 @@ defined('MOODLE_INTERNAL') || die();
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class restore_wikipediasnippet_activity_structure_step extends restore_activity_structure_step {
-
+    
     /**
      * Declares paths in the grading.xml file we are interested in
      *
      */
     protected function define_structure() {
-
+        
         $paths = array();
         $paths[] = new restore_path_element('wikipediasnippet', '/activity/wikipediasnippet');
-
+        
         // Return the paths wrapped into standard activity structure.
         return $this->prepare_activity_structure($paths);
     }
-
-
+    
+    
     /**
      * Save the data.
      *
@@ -53,21 +53,30 @@ class restore_wikipediasnippet_activity_structure_step extends restore_activity_
      */
     protected function process_wikipediasnippet($data) {
         global $DB;
-
+        
         $data = (object) $data;
         // Get the new course id.
         $data->course = $this->get_courseid();
-
+        
         // If you need to set dates offset start/end dates call ...
         // ... $data->timeopen = $this->apply_date_offset($data->timeopen);.
-
+        
         // We want to determine new times - we could have not backed up the fields.
         $data->timecreated = time();
         $data->timemodified = time();
-
+        
         // Insert the record.
         $newitemid = $DB->insert_record('wikipediasnippet', $data);
         // Immediately after inserting record, call this.
         $this->apply_activity_instance($newitemid);
     }
+    
+    /*
+     * Restore any related files
+     */
+    protected function after_execute() {
+        // Add intro field related files.
+        $this->add_related_files('mod_wikipediasnippet', 'intro', null); // No need to match by itemid.
+    }
+    
 }

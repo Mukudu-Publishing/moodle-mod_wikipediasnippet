@@ -11,18 +11,16 @@
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
 //
-// You should have received a copy of the GNU General Public License
+// You should have received a copy of the GNU GenerNew Activity Block Classal Public License
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * English Language file.
+ * English Language  file
  *
- * @package   mod_wikipediasnippet
- * @copyright 2019 - 2021 Mukudu Ltd - Bham UK
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package    mod_wikipediasnippet
+ * @copyright  2021 Mukudu Publishing
+ * @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
-defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Wikipedia Snippet';
 $string['modulename'] = 'Wikipedia Snippet';
@@ -47,12 +45,12 @@ $string['wikis_includecitations_help'] = 'Select so that citatations are not str
 $string['wikis_preview_title'] = 'Snippet Preview';
 $string['wikis_submit'] = 'Grab Snippet';
 $string['wikis_error'] = 'Errors';
+
 $string['wikipediasnippet:addinstance'] = 'Add Wikipedia Snippets to courses.';
 $string['wikipediasnippet:view'] = 'View Wikipedia Snippets';
 
-$string['cachedef_wikipediadata'] = 'Wikipedia Snippet Data Cach// Class PHP Docs //e';
+$string['cachedef_wikipediadata'] = 'Wikipedia Snippet Data Cache';
 
 $string['contentgeterror'] = 'Error getting content : "{$a}"';
-
 $string['nowikicontenterror'] = 'Error:  There is no content to display';
 

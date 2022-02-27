@@ -34,7 +34,7 @@ require_once('restore_wikipediasnippet_stepslib.php');
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class restore_wikipediasnippet_activity_task extends restore_activity_task {
-
+    
     /**
      * Define (add) settings for this activity.
      *
@@ -42,7 +42,7 @@ class restore_wikipediasnippet_activity_task extends restore_activity_task {
     protected function define_my_settings() {
         // No particular settings for this activity.
     }
-
+    
     /**
      * Define (add) steps this activity can have.
      *
@@ -52,7 +52,7 @@ class restore_wikipediasnippet_activity_task extends restore_activity_task {
         $step = new restore_wikipediasnippet_activity_structure_step('wikipediasnippet_structure', 'wikipediasnippet.xml');
         $this->add_step($step);
     }
-
+    
     /**
      * Define the contents in the activity that must be
      *
@@ -61,7 +61,7 @@ class restore_wikipediasnippet_activity_task extends restore_activity_task {
     static public function define_decode_contents() {
         return array();
     }
-
+    
     /**
      * Define the decoding rules for links belonging
      *

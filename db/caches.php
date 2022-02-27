@@ -24,6 +24,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+/*
+ * 'Cache API – Quick_reference’ page (see https://docs.moodle.org/dev/Cache_API_-_Quick_reference#Create_a_definition).
+ */
 $definitions = array(
     'wikipediadata' => array(
         'mode' => cache_store::MODE_APPLICATION,

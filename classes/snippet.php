@@ -32,13 +32,13 @@ namespace mod_wikipediasnippet;
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class snippet {
-
+    
     /** @var int $cachettl caching time to live - probably better elsewhere. */
     public static $cachettl = 24 * 60 * 60;
-
+    
     /** @var string $lasterror last error. */
     public static $lasterror = null;
-
+    
     /**
      * Get the wikipeadia snippet.
      *
@@ -57,7 +57,7 @@ class snippet {
             $getter->setdebugging();
         }
         $content = $getter->getWikiContent($snippeturl, $nolinks, $noimages, $includecitations, $debug);
-
+        
         if ($getter->error) {
             self::$lasterror = $getter->error;
             return null;

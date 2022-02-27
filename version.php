@@ -11,19 +11,19 @@
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
 //
-// You should have received a copy of the GNU General Public License
+// You should have received a copy of the GNU GenerNew Activity Block Classal Public License
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Version file.
+ * Version file
  *
- * @package   mod_wikipediasnippet
- * @copyright 2019 - 2021 Mukudu Ltd - Bham UK
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package    mod_wikipediasnippet
+ * @copyright  2021 Mukudu Publishing
+ * @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2020061504;
-$plugin->requires  = 2020061500;
+$plugin->version   = 2021051702;
+$plugin->requires  = 2021051700;
 $plugin->component = 'mod_wikipediasnippet';
